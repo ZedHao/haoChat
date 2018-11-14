@@ -154,7 +154,7 @@
 
   </script>
 </head>
-<body onload="connect();">
+<body onload="connect()">
     <div class="container">
 	    <div class="row clearfix">
 	        <div class="col-md-1 column">
