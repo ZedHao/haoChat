@@ -20,6 +20,7 @@
 
     // 连接服务端
     function connect() {
+        console.log("调用成功");
        // 创建websocket
        ws = new WebSocket("ws://"+document.domain+":7272");
        // 当socket连接打开时，输入用户名
@@ -154,7 +155,7 @@
 
   </script>
 </head>
-<body onload="connect();">
+<body onload="connect()">
     <div class="container">
 	    <div class="row clearfix">
 	        <div class="col-md-1 column">
