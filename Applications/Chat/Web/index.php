@@ -11,6 +11,7 @@
     <script type="text/javascript" src="/js/jquery-sinaEmotion-2.1.0.min.js"></script>
 
   <script type="text/javascript">
+      console.log("成功");
     if (typeof console == "undefined") {    this.console = { log: function (msg) {  } };}
     // 如果浏览器不支持websocket，会使用这个flash自动模拟websocket协议，此过程对开发者透明
     WEB_SOCKET_SWF_LOCATION = "/swf/WebSocketMain.swf";
