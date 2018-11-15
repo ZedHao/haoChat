@@ -12,7 +12,7 @@
 
   <script type="text/javascript">
       alert("I am an alert box!!");
-    if (typeof console == "undefined") {    this.console = { log: function (msg) {  } };}
+   /* if (typeof console == "undefined") {    this.console = { log: function (msg) {  } };}*/
     // 如果浏览器不支持websocket，会使用这个flash自动模拟websocket协议，此过程对开发者透明
     WEB_SOCKET_SWF_LOCATION = "/swf/WebSocketMain.swf";
     // 开启flash的websocket debug
@@ -45,9 +45,9 @@
             show_prompt();
         }
         // 登录
-        var login_data = '{"type":"login","client_name":"'+name.replace(/"/g, '\\"')+'","room_id":"<?php echo isset($_GET['room_id']) ? $_GET['room_id'] : 1?>"}';
-        console.log("websocket握手成功，发送登录数据:"+login_data);
-        ws.send(login_data);
+       /* var login_data = '{"type":"login","client_name":"'+name.replace(/"/g, '\\"')+'","room_id":"<?php /*echo isset($_GET['room_id']) ? $_GET['room_id'] : 1*/?>"}';*/
+    /*    console.log("websocket握手成功，发送登录数据:"+login_data);
+        ws.send(login_data);*/
     }
 
     // 服务端发来消息时
